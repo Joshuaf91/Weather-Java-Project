@@ -15,13 +15,13 @@ public class APIWeatherService implements WeatherService {
 
     @Override
     public String getWeatherJson(double lon, double lat) {
-        String longLat = lon + "," + lat ;
+        String weatherEndPoint = lon + "," + lat ;
         String jsonResponse = null;
         URL url;
         HttpURLConnection connection = null;
 
         try {
-            url = new URL(APIConstants.ENDPOINT);
+            url = new URL(APIConstants.ENDPOINT + weatherEndPoint);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 

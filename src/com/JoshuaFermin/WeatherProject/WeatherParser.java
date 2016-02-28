@@ -18,17 +18,17 @@ public class WeatherParser {
             JSONObject currentlyJson = (JSONObject) weatherJson.get("currently");
             currently.setTime((long) currentlyJson.get("time"));
             currently.setSummary((String) currentlyJson.get("summary"));
-            currently.setNearestStormDistance((Integer) currentlyJson.get("nearestStormDistance"));
-            currently.setNearestStormBearing ((Integer) currentlyJson.get("nearestStormBearing"));
-            currently.setPrecipIntensity ((Integer) currentlyJson.get("precipIntensity"));
-            currently.setPrecipProbability ((Integer) currentlyJson.get("precipProbability"));
+            currently.setNearestStormDistance((long) currentlyJson.get("nearestStormDistance"));
+            currently.setNearestStormBearing ((long) currentlyJson.get("nearestStormBearing"));
+            currently.setPrecipIntensity ((long) currentlyJson.get("precipIntensity"));
+            currently.setPrecipProbability ((long) currentlyJson.get("precipProbability"));
             currently.setTemperature((Double) currentlyJson.get("temperature"));
             currently.setApparentTemperature((Double) currentlyJson.get("apparentTemperature"));
             currently.setDewPoint((Double) currentlyJson.get("dewPoint"));
             currently.setHumidity((Double) currentlyJson.get("humidity"));
             currently.setWindSpeed((Double) currentlyJson.get("windSpeed"));
-            currently.setWindBearing((Integer) currentlyJson.get("windBearing"));
-            currently.setVisibility((Integer) currentlyJson.get("visibility"));
+            currently.setWindBearing((long) currentlyJson.get("windBearing"));
+            currently.setVisibility((double) currentlyJson.get("visibility"));
             weather.setCurrently(currently);
         } catch (ParseException e) {
             e.printStackTrace();

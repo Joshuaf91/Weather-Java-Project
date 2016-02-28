@@ -6,17 +6,17 @@ package com.JoshuaFermin.WeatherProject;
 public class Currently {
     private long time;
     private String summary;
-    private int nearestStormDistance;
-    private int nearestStormBearing;
-    private int precipIntensity;
-    private int precipProbability;
+    private long nearestStormDistance;
+    private long nearestStormBearing;
+    private long precipIntensity;
+    private long precipProbability;
     private double temperature;
     private double apparentTemperature;
     private double dewPoint;
     private double humidity;
     private double windSpeed;
-    private int windBearing;
-    private int visibility;
+    private long windBearing;
+    private double visibility;
 
     public long getTime() {
         return time;
@@ -34,35 +34,35 @@ public class Currently {
         this.summary = summary;
     }
 
-    public int getNearestStormDistance() {
+    public long getNearestStormDistance() {
         return nearestStormDistance;
     }
 
-    public void setNearestStormDistance(int nearestStormDistance) {
+    public void setNearestStormDistance(long nearestStormDistance) {
         this.nearestStormDistance = nearestStormDistance;
     }
 
-    public int getNearestStormBearing() {
+    public long getNearestStormBearing() {
         return nearestStormBearing;
     }
 
-    public void setNearestStormBearing(int nearestStormBearing) {
+    public void setNearestStormBearing(long nearestStormBearing) {
         this.nearestStormBearing = nearestStormBearing;
     }
 
-    public int getPrecipIntensity() {
+    public long getPrecipIntensity() {
         return precipIntensity;
     }
 
-    public void setPrecipIntensity(int precipIntensity) {
+    public void setPrecipIntensity(long precipIntensity) {
         this.precipIntensity = precipIntensity;
     }
 
-    public int getPrecipProbability() {
+    public long getPrecipProbability() {
         return precipProbability;
     }
 
-    public void setPrecipProbability(int precipProbability) {
+    public void setPrecipProbability(long precipProbability) {
         this.precipProbability = precipProbability;
     }
 
@@ -106,19 +106,19 @@ public class Currently {
         this.windSpeed = windSpeed;
     }
 
-    public int getWindBearing() {
+    public long getWindBearing() {
         return windBearing;
     }
 
-    public void setWindBearing(int windBearing) {
+    public void setWindBearing(long windBearing) {
         this.windBearing = windBearing;
     }
 
-    public int getVisibility() {
+    public double getVisibility() {
         return visibility;
     }
 
-    public void setVisibility(int visibility) {
+    public void setVisibility(double visibility) {
         this.visibility = visibility;
     }
 }
