@@ -4,7 +4,7 @@ package com.JoshuaFermin.WeatherProject;
  * Created by Joshua on 2/28/2016.
  */
 public class Currently {
-    private float time;
+    private long time;
     private String summary;
     private int nearestStormDistance;
     private int nearestStormBearing;
@@ -18,11 +18,11 @@ public class Currently {
     private int windBearing;
     private int visibility;
 
-    public float getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(float time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
